@@ -1,4 +1,4 @@
-const SingleItem = ({ item, removeItem }) => {
+const SingleItem = ({ item, removeItem, editItem }) => {
   return (
     <article className="single-item">
       <input
