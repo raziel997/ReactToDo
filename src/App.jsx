@@ -30,7 +30,9 @@ const App = () => {
     notify(`"${newItem.name}" has been added Succefully`);
   };
   const removeItem = (id) => {
-    setItems(items.filter((item) => item.id !== id));
+    const newItems = items.filter((item) => item.id !== id);
+    setItems(newItems);
+    setLocalStorage(newItems);
   };
   const editItem = (itemId) => {
     const newItems = items.map((item) => {
