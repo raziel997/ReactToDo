@@ -42,6 +42,7 @@ html {
   --white: #fff;
   --red-light: #f8d7da;
   --red-dark: #842029;
+  --red-medium: #a3333b;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
 
@@ -320,7 +321,7 @@ form h4 {
 .single-item {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 1rem;
+  margin: .5rem auto;
   align-items: center;
 }
 
@@ -329,9 +330,13 @@ form h4 {
 }
 
 .remove-btn {
-  padding: 0.15rem 0.25rem;
+  padding: 0.5rem 0.5rem;
   font-size: 0.75rem;
-  background: var(--black);
+  background: var(--red-dark);
+}
+
+.remove-btn:hover {
+  background: var(--red-medium);
 }
 
 .Toastify__toast {
