@@ -35,6 +35,11 @@ const App = () => {
   const editItem = (itemId) => {
     const newItems = items.map((item) => {
       if (item.id === itemId) {
+        toast.info(
+          `"${item.name}" has been ${
+            item.completed ? "uncompleted" : "completed"
+          }`
+        );
         return { ...item, completed: !item.completed };
       }
       return item;
