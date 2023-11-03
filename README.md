@@ -1,3 +1,7 @@
+# URL Deployed App
+
+[URL](https://todopxm.netlify.app/)
+
 ## Figma URL
 
 [Grocery Bud](https://www.figma.com/file/8rXGl68NoEmAhHpcV7aB5o/Grocery-bud?node-id=0%3A1&t=IMjjwDExGWpXdpQL-1)
@@ -62,7 +66,7 @@ To store data in localStorage, you can use the localStorage.setItem(key, value) 
 Here's an example of how to use localStorage.setItem():
 
 ```js
-localStorage.setItem('username', 'John');
+localStorage.setItem("username", "John");
 ```
 
 This code stores the string 'John' with the key 'username' in localStorage.
@@ -72,7 +76,7 @@ To retrieve data from localStorage, you can use the localStorage.getItem(key) me
 Here's an example of how to use localStorage.getItem() to retrieve the value of the 'username' key we set earlier:
 
 ```js
-const username = localStorage.getItem('username');
+const username = localStorage.getItem("username");
 console.log(username); // outputs 'John'
 ```
 
@@ -82,14 +86,14 @@ For example:
 
 ```js
 const user = {
-  name: 'John',
+  name: "John",
   age: 30,
-  email: 'john@example.com',
+  email: "john@example.com",
 };
 
-localStorage.setItem('user', JSON.stringify(user));
+localStorage.setItem("user", JSON.stringify(user));
 
-const storedUser = JSON.parse(localStorage.getItem('user'));
+const storedUser = JSON.parse(localStorage.getItem("user"));
 
 console.log(storedUser.name); // outputs 'John'
 console.log(storedUser.age); // outputs 30
